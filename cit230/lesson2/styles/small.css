@@ -14,13 +14,12 @@ body {
 }
 
 h1, h2, h3 {
-    color: #9ea3b0;
-  text-align: center;   
+    color: #9ea3b0;   
     padding: 10px;
     font-family: "Merriweather", Impactt, cursive;
    font-size: 1.1em;
     line-height: 1.1em;
-    margin-bottom: -.5em;
+    margin-bottom: .5em;
 }
 
 p {
