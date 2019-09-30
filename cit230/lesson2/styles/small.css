@@ -10,6 +10,7 @@ img {
 body {
     font-family: "Noto+Sans", Helvetica, sans-serif;
     font-size: 1.1em;
+    
 }
 
 h1, h2, h3 {
@@ -30,8 +31,10 @@ p {
    }
 
 .sec1, .sec2, .sec3 {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+        display: grid;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
 }
