@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cantarell|Varela&display=swap');
 
 #content {
   max-width: 960px;
   margin: 0 auto;
   background-color: steelblue;
+}
+
+header {
+  background-color:#88acd4;
 }
 
 nav {
@@ -54,7 +58,7 @@ h2 {
 
 h3 {
     text-align: center;
-    font-family: 'Mansalva';
+    font-family: 'Varela';
     font-size: 2.25em;
     padding: 10px;
     line-height: 1em;
@@ -107,8 +111,8 @@ h4 {
   }
 
   .img1, .img2, .img3 {
-    width: 100%;
-     height: 100%;
+    width: 25%;
+     height: 25%;
        border-radius: 5px;
      box-shadow: 3px 3px 3px black;
    }
