@@ -3,17 +3,17 @@
 #content {
   max-width: 960px;
   margin: 0 auto;
-  background-color: steelblue;
+  background-color: #21174f;
 }
 
 header {
-  background-color:#88acd4;
+  background-color:steelblue;
 }
 
 nav {
 	margin: 0 auto;
 	max-width: 760px;
-	background-color: #43464B;
+	background-color: whitesmoke;
 }
 .navigation {
 	list-style: none;
