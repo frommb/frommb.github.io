@@ -1,15 +1,11 @@
-let currentTemp = 41;
-let windSpeed = 8;
-if (currentTemp < 50 && windSpeed < 3) {
-    let windChill = 35.74 + 0.6215 * currentTemp - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * currentTemp * Math.pow(windSpeed, 0.16);
-}
+var temp = parseInt(document.getElementById("temperature").innerText);
 
-document.getElementById("currentTemp").innerHTML = currentTemp + '&deg';
-document.getElementById("windSpeed").innerHTML = windSpeed + ' mph';
+var speed = parseInt(document.getElementById("speed").innerText);
 
-if (windChill === 0) {
-document.getElementById("windChill").innerHTML = 'N/A'
-}
-else {
-document.getElementById("windChill").innerHTML = Math.round(windChill) + '&deg';
+if(temp <= 50 && speed >= 3){
+    var formula = 35.74 + (0.6215*temp) - (35.75*(speed**0.16)) + (0.4275*temp*(speed**0.16));
+document.getElementById("chill").innerText = formula.toFixed(2);
+
+} else {
+   document.getElementById("chill").innerText = "N/A" 
 }

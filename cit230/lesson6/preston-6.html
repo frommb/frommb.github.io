@@ -3,113 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Preston Home Page</title>
-    <link rel="stylesheet"href="styles/large.css">
-    <link rel="stylesheet"href="styles/medium.css">
-    <link rel="stylesheet"href="styles/small.css">
+    <title>Weather Site Project- Preston, ID</title>
+    <link rel="stylesheet" href="styles/normalization.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>The Stormy Channel</h1>
-        <section id='weatherSummary'>
-            <div>
-            <span>Current Temperature: </span>
-            <span id="currentTemp"></span>
+        <body>
+            <section id="bannerad" hidden><h1>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h1></section>
+            <header>
+                <img src="images/index.png" alt="logo for weather site">
+                <section class="websiteheaders">
+                <h1>The Stormy Channel</h1>
+                <div class="tagline">The latest weather forecast for Southeast Idaho</div>
+                </section>
+            </header>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class= "active"><a href ="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+        <main>
+            <h2>Preston, Idaho</h2>
+            <div class="weathersummary">
+                <picture class="weatherphoto">
+                    <source srcset="./images/heroimagemedium.jpeg" media="(min-width: 34em) and (max-width: 65em)" > 
+                    <source srcset="./images/heroimagelarge.jpeg" media="(min-width: 65em)">
+                        <img src="images/small.jpgx`" alt="picture for weather summary"> 
+                </picture>
+                <section class="weatherstats">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: Rainy</p>
+                    <p>Temperature: <span id="temperature">48</span>° F</p>
+                    <p>Humidity: 13%</p>
+                    <p>Precipitation: 3 inches</p>
+                    <p>Wind Speed: <span id="speed">10</span> MPH</p>
+                    <p>Wind Chill: <span id="chill"></span>°F</p>
+                    </section>
             </div>
-            <div>
-            <span>Wind Speed: </span>
-            <span id="windSpeed"></span>
+           <div class="fivedayforecast">
+            <h4>5 Day Weather Forecast</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mon</th>
+                            <th>Tues</th>
+                            <th>Wed</th>
+                            <th>Thurs</th>
+                            <th>Fri</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&#9925; 54°F</td>
+                            <td>&#127783; 50°F</td>
+                            <td>&#127783; 57°F</td>
+                            <td>&#x1f328; 48°F</td>
+                            <td>&#x1f328; 49°F</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div></div>
-            <span>Wind Chill: </span>
-            <span id="windChill"></span>
-        </div>
+            <br>
+            <section id="articlecontent">
+            <div class="articlecolumn">
+                <h4>Article Title</h4>
+            <h5>By: Author</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="articleimage">
+                <img src="./images/grassypark.jpg" alt=" park image for article">
+            </div>   
         </section>
-    </header>
-    <nav>
-               <ul class = "navigation">
-                        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                        <li><a href="/index.html">Home</a></li>
-                        <li class= "active"><a href ="#">Preston</a></li>
-                        <li><a href="#">Soda Springs</a></li>
-                        <li><a href="#">Fish Haven</a></li>
-                        <li><a href="#">Storm Center</a></li>
-                        <li><a href="#">Gallery</a></li>
-                </ul> 
-    </nav>
-    <main>
-<h2>Preston</h2>
-<!-- Add Hero Image Here-->
-        <!-- pancakes-->
-        <section id="pancake" class="hidden">
-            <p>
-                Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
-            </p>
-        </section>
-        <section id='forecast'>
-        <h3>High Temperature Forecast</h3>
-        <table>
-            <tr>
-                <th>Day</th>
-                <th id='day1'>Day 1</th>
-                <th id='day2'>Day 2</th>
-                <th id='day3'>Day 3</th>
-                <th id='day4'>Day 4</th>
-                <th id='day5'>Day 5</th>
-
-                <td>Forcast</td>
-                <td id='temp1'>60</td>
-                <td id='temp2'>68</td>
-                <td id='temp3'>56</td>
-                <td id='temp4'>52</td>
-                <td id='temp5'>44</td>
-            </tr>
-        </table>
-        </section>
-        <section class = "sec1">
-                    <div class= "leftcol">
-                        <img class="logo" src="images/Weather_Logo.jpg" alt= Website Logo>
+        <br>
+            <section id="contactinformation">
+                    <div class="mapofpreston">
+                        <img src="./images/prestonmap.jpg" alt="Preston Idaho map">
                     </div>
-                    <div class= "rightcol">
-                        <h1>StormyChannel .com</h1>
-                        <h2>Providing current and accurate weather for those who love storms</h2>
-                    </div>
-        </section>
-        <section class = "sec2">
-                <div><h3>Preston, Idaho</h3></div>
-        </section>
-        <section class="sec3">
-            <div><h4>5-day Forecast</h4>
-                <p></p>
-            </div>
-            <div class= "leftcol">
-                <h4>About Preston</h4>
-                <p>Preston Idaho is a small little town located in Franklin, County Idaho.  
-                It has a population of a little over 5,000 people.  Preston Idaho is famous for its Festival of Lights, 
-                which occurs every year from the day after Thanksgiving until December 31.
-            </p>
-            </div>
-            <div class="rightcol">
-        </section>
-        <section class="sec3"> 
-            <div class="leftcol">
-                <img class=".img2" src="images/Preston_Idaho_City_Hall.jpg" alt="Preston City Hall">
-            </div>
-            <div class="rightcol">
+                <div class=informationcolumn>
                 <h4>Contact Information</h4>
-                <p>We would love to hear back from your if you find the Stormiest of storms!
-                    Please feel free to call +1(800)-(000)-(1234) for any comments.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344476!2d-111.91534446082579!3d42.099741626381444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1571244962486!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
-
-        &copy; <span id="currentDate"></span>
-
-        <script src="scripts/main.js"></script>
-        <script src="scripts/windChill.js"></script>
-    </footer>
-</body>
+                <strong>Stormy Channel</strong>
+                <p>&phone; (208)333-3333</p>
+                <p>&#9993; TheStormyCHannel@gmail.com</p>
+                </div>
+            </section>
+        </main>
+            <footer>&copy; The Stormy Channel | Benjamin Fromm </a>
+                <br>
+                Current Date: <span id="currentdate"></span>
+            </footer>
+            <script src="scripts/sources.js"></script>
+            <script src="scripts/windchill.js"></script>
+            <script src="scripts/main.js"></script>
+        </body>
 </html>
