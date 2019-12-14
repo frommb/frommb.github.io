@@ -1,50 +1,51 @@
-table {
-  font-family: 'Ubuntu', 'sans-serif';
-  border: 1px solid #bbbbbb;
-  box-shadow: 23px 22px 20px -16px rgba(113,151,174,1);
-  border-collapse: collapse;
+header{
+  background-color: navy;
+  color: whitesmoke;
   text-align: center;
+  padding:30px;
+  font-size: 32pt;
 }
 
-table thead:first-child tr th {
-  background-color: #7fb9c2;
-  font-size: 28px;
-  font-weight: bold;
+body{
+background-color: white;
+font-family: "ubuntu", sans-serif;
+}
+
+table{
+  text-align: center;
+  border: 1px gray solid;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 30px;
+  width: 25%;
+  box-shadow: 5px 5px 5px #628ca6;
+}
+
+th,td{
+  border: 1px gray solid;
   padding: 10px;
+  font-size: 12pt;
 }
 
-table tbody tr:first-child td {
-  background-color: #628ca6;
+thead th{
   color: white;
+  background-color: #628ca6;
+}
+
+thead td{
   font-weight: bold;
-  padding: 10px;
-  font-size: 20px;
-}
-
-table tbody tr:nth-child(6) td:nth-child(1) {
-  font-style: italic;
-}
-
-table tbody tr:nth-child(5) td:nth-child(3) {
-  background-color: #628ca6;
-  color: white;
-}
-
-tfoot tr:first-child {
-  background-color: #7fb9c2;
-  font-size: 12px;
-  text-align:center;
-}
-
-td {
-    border: 1px solid #bbbbbb;
-    padding: 10px;
+  font-size: 18pt;
 }
 
 tr:nth-child(odd){
-  background-color: #e7ffed;
+  background-color: #e7f0ed;
 }
 
-tr:nth-child(even){
-  background-color: #e7f0ed;
+.highlighted{
+  background-color: #628ca6;
+  color: white;
+}
+
+tfoot td{
+  font-size: 10pt;
 }
