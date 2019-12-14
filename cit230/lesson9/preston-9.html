@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stormy Channel</title>
+    <link rel="stylesheet" href="styles/normalization.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="bannerad" hidden>
+        <h1>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h1>
+    </section>
+    <header>
+        <img src="images/index.png" alt="logo for weather site">
+        <section class="websiteheaders">
+            <h1>The Gem State Climate Conditions</h1>
+            <div class="tagline">The Latest Weather Forecast</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">☰ Menu</a></li>
+            <li><a href="/cit230/lesson9/preston-9.html">Home</a></li>
+            <li><a href="../lesson-10/preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="/cit230/lesson7/preston-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+            <h2>Town Data</h2>
+            <div class="townstats"></div>
+            <section id="newsarticle">
+                <h5>Winter Preparations</h5>
+                <p>Record lows are hitting the Southeast Idaho area at an earlier time this year than usual. 
+                Southeast Idaho is expected to have record snowfall this winter. So, it is important that 
+                you are prepared early with any snow equipment in your vehicles and in your homes. We suggest
+                having at least 72 hours worth of emergency food, water, light, heating and power sources in case
+                 of blackouts from any blizzards or other winter storms that hit the area. We also suggest having 
+                 new snow tires put on and emergency food, first aid kits and blankets in your vehicles as well.
+                 We want to make sure that everyone stays safe this winter.</p>
+               
+            </section>
+    </main>
+    <footer>&copy; The Stormy Channel | Benjamin Fromm </a>
+    <br>
+    Current Date: <span id="currentdate"></span>
+</footer>
+<script src="scripts/sources.js"></script>
+<script src="scripts/towndata.js"></script>
+<script src="scripts/loading.js"></script>
+<script src="scripts/webfron.js"></script>
+    </body>
+</html>
