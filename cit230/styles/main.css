@@ -1,0 +1,93 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato|Skranji|Raleway");
+:root {
+  /* Fonts */
+  --heading-font: Skranji, sans-serif;
+  --footer-font: Raleway, Lato, Helvetica, sans-serif;
+  --paragraph-font: Raleway, Lato, Helvetica, sans-serif;
+
+  /* Colors */
+  --body-color: #000;
+  --heading-color: #fff;
+  --backgound-color: #24211c;
+  --font-backgound-color: #1094e0;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 32px;
+  font-family: var(--paragraph-font);
+  color: var(--body-color);
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 2.4rem /* x.xrem  (rem is a unit of measure) */;
+  color: var(--heading-color);
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-size: 1.7rem;
+  text-align: center;
+  border-bottom: 1px solid #bbb;
+}
+
+main h2 {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+header,
+main,
+footer {
+  font-family: var(--footer-font);
+  margin: 1.25rem auto 0;
+  border-radius: 10px;
+  padding: 0.5rem;
+  max-width: 80%; /* xxxpx (px = pixel is a unit of measure)  */
+}
+header,
+footer,
+footer a {
+  text-align: center;
+  background-color: var(--backgound-color);
+  color: var(--font-backgound-color);
+}
+
+header img {
+  width: 21%;
+  height: auto;
+  float: right;
+}
+
+footer {
+  font-size: smaller;
+  margin-top: 0;
+}
+
+ul {
+  /* text-align: center; */
+  margin: 0 0 auto;
+  max-width: 80%;
+}
+ul > a {
+  color: #24211c;
+  text-decoration: none;
+}
+
+ul > a:link {
+  color: #24211c;
+}
+
+ul > a:visited {
+  color: var(--font-backgound-color);
+}
