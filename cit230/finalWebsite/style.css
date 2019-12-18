@@ -110,10 +110,9 @@ width: 960px;
 /* beginning of media query */
     .home-grid {
     display: block;
-    
-      nav ul, .banner-box {
-    display: block;
 }
+    }
+    
     
                     
-      
+    
