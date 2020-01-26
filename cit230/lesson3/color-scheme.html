@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Colors</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CIT 230 Planning Page Winter 2019</title>
+        <meta name="website planning document" content="color scheme">
+        <link rel="stylesheet" href="styles/normalization.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="target-audience.html">Target Audience</a></li>
-                <li><a href="color-scheme.html">Color Scheme</a></li>
-                <li><a href="typography.html">Typography</a></li>
-        </nav>
+        <img src="images/index.png" alt="logo for weather site">
+        <section class="websiteheaders">
+        <h1>The Stormy Channel</h1>
+        <div class="tagline">The latest weather forecast for Southeast Idaho</div>
+        </section>
     </header>
-    <main>
-            <h1>Color Scheme</h1>
+    <nav>
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="target-audience.html">Target Audience</a></li>
+                 <li><a href="color-scheme.html" class="active">Color Scheme</a></li>
+                 <li><a href="typography.html">Typography</a></li>
+            </ul>
+    </nav>
+        <main>
+            <h3>Color Scheme</h3>
+            <section>
+                <p id="colornumber1">steelblue: header and footer color, paragraph background</p>
+           
+                <p id="colornumber2">#21174F: heading title color, link hover color, active color</p>
+            
+                <p id="colornumber3">#bae4fd: navigation bar color</p>
+            
+                <p id="colornumber4">#d8d8da: body background color</p>
+            
+                <p id="colornumber5">#3A3B38: main text color, navigation bar text color, link color</p>
+            </section>
+            
         </main>
+        <footer>&copy; The Stormy Channel | Benjamin Fromm
+            <br>
+            Current Date: <span id="currentDate"></span>
+            Last updated: <span id="lastupdated"></span>
+            
+        </footer>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/date.js"></script>
 </body>
 </html>

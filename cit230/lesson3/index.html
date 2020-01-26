@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Site Plan</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CIT 230 Planning Page Winter 2019</title>
+        <meta name="web planning document" content="typography page">
+        <link rel="stylesheet" href="styles/normalization.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
+        <img src="images/index.png" alt="logo for weather site">
+        <section class="websiteheaders">
         <h1>The Stormy Channel</h1>
-        <nav>
-            <ul>
-            <li><a href="index.html">Home</a> class= </li>
+        <div class="tagline">The latest weather forecast for Southeast Idaho</div>
+        </section>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="target-audience.html">Target Audience</a></li>
             <li><a href="color-scheme.html">Color Scheme</a></li>
             <li><a href="typography.html">Typography</a></li>
-        </nav>
-    </header>
-    <main>
-        <h1>Home Page</h1>
-    </main>
-</body>
+        </ul>
+    </nav>
+<main>
+    <h3>Site Purpose</h3>
+    <p>The purpose for this site is to provide visitors to the page information about the
+        latest weather condition for a selection of towns in the Southeast Idaho area of 
+        the country. These towns include Preston, Soda Springs and Fish Haven. The home page
+        on the site will feature a weather story along with an image and information on each
+        of the three towns. Each town will have a page that provides current weather conditions, 
+        images of the town and its current weather condition, and any other current and relevant 
+        information related to each town. 
+    </p>
+    <p>Domain name: thestormychannel.com</p>
+    <p>Price for domain is about $12 a year</p>
+    <p>Domain logo: <img src="images/index.png" alt="logo for weather site"></p>
+</main>
+
+        <footer>&copy; The Stormy Channel | Benjamin Fromm
+            <br>
+            Current Date: <span id="currentDate"></span>
+            Last updated: <span id="lastupdated"></span>
+            
+        </footer>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/date.js"></script>
+    </body>
 </html>

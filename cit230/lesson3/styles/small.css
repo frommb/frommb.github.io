@@ -1,19 +1,238 @@
-/* htnl selectors*/
-li {
-    float: left;
-    margin: 10px;
-    padding-left: 0;
-    list-style: none;
-}
-
-li a {
-    text-decoration: none;
-}
-
-/* class selectors */
-.active {
+header{
     background-color: steelblue;
-    
+    border-radius: 2
 }
 
-/* id selectors */
+h1{
+    font-family: "Quicksand", sans-serif;
+    color: #21174f;
+    text-align: center;
+    font-size: 1.75em;
+    padding-top:5px;
+}
+
+h2{
+    font-family: "Quicksand", sans-serif;
+    color: #21174f;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+h3{
+    color: #21174f;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+h4{
+    text-decoration: underline;
+    color: #21174F;
+}
+
+img{
+    margin: 10px auto;
+    max-width: 65px;
+}
+
+nav {
+    background-color: #bae4fd;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    border-radius: 25px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul a {
+    display: block;
+    color: #3A3B38;
+    text-align: center;
+    padding: .75rem;
+    text-decoration: none;
+    font-size: .75em;
+    font-weight: bold;
+}
+
+nav ul a:link, nav ul a:visited{
+    color: #3A3B38;
+}
+
+nav ul a:hover{
+    color: #21174f;
+}
+
+nav ul a.active{
+    color: #21174f;
+    text-decoration: underline;
+}
+
+
+body{
+    background-color: #d8d8da;
+    text-align: center;
+    color: #3A3B38;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    background-color: #848485;
+    color: #3A3B38;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: .5em;
+}
+
+footer a:link, footer a:visited{
+    color: #3A3B38;
+    font-family: "EB Garamond", serif;
+}
+
+footer a:hover{
+    color:#848485;
+}
+
+main {
+	display: grid;
+    grid-template-columns: 1fr;
+    font-size: .5em;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    background-color: #D8D8DA
+}
+
+main section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -35px;
+    width: 75%;
+    padding: 30px;
+	/* padding: 0 1rem; */
+}
+
+
+#colornumber1{
+    background-color: steelblue;
+    color: #3A3B38;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#colornumber2{
+    background-color: #21174F;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#colornumber3{
+    background-color: #bae4fd;
+    color: whitesmoke;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#colornumber4{
+    background-color: #D8D8DA;
+    color: #3A3B38;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#colornumber5{
+    background-color: #3A3B38;
+    color: whitesmoke;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#fontstyle1{
+    font-family: "Quicksand", sans-serif;
+}
+
+#fontstyle2{
+    font-family:"EB Garamond", serif;
+}
+
+#fontstyle3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.persona1, .persona2{
+    background-color: steelblue;
+    color:#3A3B38;
+   margin-top: 15px;
+   margin-bottom:15px;
+}
+
+.scenarios{
+    background-color: steelblue;
+    color:#3A3B38;
+    margin-bottom: 45px;
+    margin-top: 15px;
+}
+
+html{
+    line-height: normal;
+}
+
+table, th, td{
+    border: solid black;
+    border-width: 1px;
+    border-collapse: collapse;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.sample1{
+    font-family: "Quicksand", sans-serif;
+    color: #21174F;
+    font-size: 2.75em;
+}
+
+.sample2{
+    font-family: "Quicksand", sans-serif;
+    color: #21174F;
+    font-size: 2em;
+}
+
+.sample3{
+    font-family: "EB Garamond", serif;
+    color: #382319;
+    font-size: 1.25em;
+}
+
+.sample4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #21174F;
+    font-size: 2.25em;
+}
+
+.sample5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #382319;
+    font-size: 1.25em;
+}
+
+.sample6{
+    font-family: "Quicksand", sans-serif;
+    color: #21174F;
+    font-size: 1em;
+}

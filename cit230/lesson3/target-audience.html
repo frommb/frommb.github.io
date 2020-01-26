@@ -1,28 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Audience</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CIT 230 Planning Page Winter 2019</title>
+        <meta name="web planning document" content="target audience for website planning document">
+        <link rel="stylesheet" href="styles/normalization.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <nav>
+        <img src="images/index.png" alt="logo for weather site">
+        <section class="websiteheaders">
+        <h1>The Stormy Channel</h1>
+        <div class="tagline">The latest weather forecast for Southeast Idaho</div>
+        </section>
+    </header>
+    <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="target-audience.html">Target Audience</a></li>
+                <li><a href="target-audience.html" class="active">Target Audience</a></li>
                 <li><a href="color-scheme.html">Color Scheme</a></li>
                 <li><a href="typography.html">Typography</a></li>
-        </nav>
-    </header>
-        <main>
-            <h1>Target Audience</h1>
-        </main>
+            </ul>
+    </nav>
+    <main>
+            <h3>Target Audience</h3>
+            <section>
+            <p>The target audience for this site are people who want to stay 
+                updated on the weather. This can be for anyone who wants to know the local weather. The typical site vistors
+                are all ages. Most site visitors come to 
+                see what the weather will be as well as what is currently is. 
+            </p>
+            </section>
+            <br>
+            <section class="persona1">
+                <h4>Persona 1</h4>
+                <p>Name: Terrence Howard</p>
+                <p>Demographics: 32 year old Proffessor at BYU-Idaho, married</p>
+                <p>Location: Rexburg, Idaho </p>
+                <p>Occupation: Teaches CIT courses to college students.</p>
+                <p>Hobbies: Hunting, Fishing, Camping and playing games with his kids</p>
+                <p>Prefered Browsing Device: Samsung Galaxie S9</p>
+            </section>
+            <br>
+            <section class="persona2">
+                <h4>Persona 2</h4>
+                <p>Name: Katie Hall</p>
+                <p>Location: Dallas, Georgia</p>
+                <p>Demographics: 43 year old mother, 3 children aged 7, 15 and 21</p>
+                <p>Occupation: Parapro at a local elementary school</p>
+                <p>Hobbies: Spending time with her children, blogging and reading</p>
+                <p>Prefered Browsing Device: Apple Macbook</p>
+            </section>
+            <br>
+            <section class="scenarios">
+                <h4> Scenarios</h4>
+                <p>Hows the weather in the spring, or summer??? </p>
+                <p> </p>Is it always snowing year round?</p>
+                <p>How much snow do they typically get a season?</p>
+                <p>Are there any fun family activities to participate in?</p>
+            </section>
+    </main>
+        
+    <footer>&copy; The Stormy Channel | Benjamin Fromm
+        <br>
+        Current Date: <span id="currentDate"></span>
+        Last updated: <span id="lastupdated"></span>
+        
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/date.js"></script>
 </body>
-
 </html>

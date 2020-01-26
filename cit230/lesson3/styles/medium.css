@@ -1,0 +1,51 @@
+@media only screen and (min-width: 37.5em) {
+
+    h1{
+        font-size: 2.25em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+     h3{
+         font-size: 2em;
+     }
+
+     nav ul a{
+         font-size: 1em;
+     }
+
+     header img {
+        margin: 30px 10px;
+        float: left;
+        display: block;
+        max-width: 100px;
+    }
+
+    main{
+        font-size: 1em;
+    }
+
+    footer{
+        font-size:.75em;
+    }
+
+     nav ul { display: flex; }
+
+     nav ul li { flex: 1 1 100%; }
+
+   
+
+
+      
+ 
+
+
+
+
+
+
+
+
+}

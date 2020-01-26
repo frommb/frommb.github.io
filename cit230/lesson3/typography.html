@@ -1,29 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Typography</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CIT 230 Planning Page Winter 2019</title>
+        <meta name="web planning document" content="typography page">
+        <link rel="stylesheet" href="styles/normalization.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <nav>
+        <img src="images/index.png" alt="logo for weather site">
+        <section class="websiteheaders">
+        <h1>The Stormy Channel</h1>
+        <div class="tagline">The latest weather forecast for Southeast Idaho</div>
+        </section>
+    </header>
+    <nav>
             <ul>
-                <li><a href="index.html">Home</a> </li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="target-audience.html">Target Audience</a></li>
                 <li><a href="color-scheme.html">Color Scheme</a></li>
-                <li><a href="typography.html">Typography</a></li>
-        </nav>
-    </header>
+                <li><a href="typography.html" class="active">Typography</a></li>
+            </ul>
+    </nav>
         <main>
-            <h1>Typography</h1>
+         <h3>Typography</h3>
+         <table>
+                <thead>
+                  <tr>
+                    <th>Element</th>
+                    <th>Font</th>
+                    <th>Size</th>
+                    <th>Color</th>
+                    <th>Sample</th>
 
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Header 1</td>
+                    <td>Quicksand</td>
+                    <td>2.75em</td>
+                    <td>#21174F</td>
+                    <td class="sample1">Sample</td>
+                  </tr>
+                   <tr>
+                    <td>Header 2</td>
+                    <td>Quicksand</td>
+                    <td>2em</td>
+                    <td>#21174F</td>
+                    <td class="sample2">Sample</td>
+                  </tr>
+                   <tr>
+                    <td>Navigation bar and links</td>
+                    <td>EB Garamond</td>
+                    <td>1.25em</td>
+                    <td>#382319</td>
+                    <td class="sample3">Sample</td>
+                  </tr>
+                   <tr>
+                    <td>Header 3</td>
+                    <td>Arial</td>
+                    <td>2em</td>
+                    <td>#21174F</td>
+                    <td class="sample4">Sample</td>
+                  </tr>
+                  <tr>
+                      <td>Main text</td>
+                      <td>Arial</td>
+                      <td>1.25em</td>
+                      <td>#21174F</td>
+                      <td class="sample5">Sample</td>
+                  </tr>
+                  <tr>
+                      <td>Footer</td>
+                      <td>Quicksand</td>
+                      <td>1em</td>
+                      <td>#21174F</td>
+                      <td class="sample6">Sample</td>
+                  </tr>
+                </tbody>
+            </table>
         </main>
-</body>
 
+        <footer>&copy; The Stormy Channel | Benjamin Fromm
+            <br>
+            Current Date: <span id="currentDate"></span>
+            Last updated: <span id="lastupdated"></span>
+            
+        </footer>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/date.js"></script>
+</body>
 </html>
