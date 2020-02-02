@@ -1,53 +1,40 @@
-function toggleMenu() {
-	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+//code for responsive menu for small and medium views
+function toggleMenu(){
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
-var currentDate = new Date();
-var currentDateString;
-
-// get day of week
-var weekDayNumber = currentDate.getDay();
-
-var daysOfWeek = [ 
-    'Sunday', 
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
+//code for current date
+const daynames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
 ];
-
-var weekDay = daysOfWeek[weekDayNumber];
-
-currentDateString = weekDay + ', ';
-
-currentDateString += currentDate.getDate();
-
-var monthsOfYear = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
+const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
 ];
+const d = new Date();
+const dayName = daynames[d.getDay()];
+const monthName = months[d.getMonth()];
+const year = d.getFullYear();
+const fulldate = dayName + ", " + monthName + " " + d.getDate() +", " + year;
+document.getElementById("currentdate").textContent = fulldate;
 
-var monthNumber = currentDate.getMonth();
-
-var month = monthsOfYear[monthNumber];
-
-currentDateString += ' ' + month;
-
-currentDateString += ' ' + currentDate.getFullYear();
-
-document.getElementById('currentDate').innerHTML = currentDateString;
-
-// DEBUG:
-console.log(currentDateString);
+//code for banner ad
+if (d.getDay() === 5) {
+    document.getElementById("bannerad").hidden = false;
+}
