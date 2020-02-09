@@ -1,0 +1,16 @@
+@media only screen and (min-width: 60em){
+    h1{
+        font-size: 3rem;
+        }
+    h2{
+        font-size: 2rem;
+    }
+    header, footer{
+        height: 90px;
+        }
+    img{
+        box-shadow: 8px 13px #1094e0;
+        float: right;
+        }
+
+    }

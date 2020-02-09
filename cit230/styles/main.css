@@ -64,9 +64,9 @@ footer a {
 }
 
 header img {
-  width: 21%;
-  height: auto;
-  float: right;
+  height: 250px;
+  margin: 20px;
+}
 }
 
 footer {
