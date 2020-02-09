@@ -39,8 +39,16 @@
     }
 
         .weatherstats{
-            top: 20px;
-            left: 40px;
+            position: absolute;
+            top: 12%;
+            left: 15%;
+            background: radial-gradient(
+            whitesmoke,
+            steelblue);
+            border: 1px solid
+            #000;
+            padding: 1rem;
+            opacity: .8;
         }
 
     picture.weatherphoto img{
