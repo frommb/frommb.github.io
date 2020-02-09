@@ -38,10 +38,13 @@
         text-align: center;
     }
 
-    img{
-        max-width: 80%;
-        height: 15%;
+        .weatherstats{
+            top: 20px;
+            left: 40px;
+        }
 
+    picture.weatherphoto img{
+        box-shadow: 10px 10px 5px #646464;
     }
 
     table, th, td{
@@ -59,3 +62,10 @@
         background-color: steelblue;
     }
 }
+    .fivedayforecast{
+        font-size: 18pt;
+    }
+
+    #articlecontent{
+        font-size:16pt;
+        }

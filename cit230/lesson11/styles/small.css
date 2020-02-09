@@ -190,6 +190,8 @@
         background-color: #848485;
         font-family: "Quicksand", sans-serif;
         padding:5px;
+        margin-top: 10px;
+       margin-bottom: 10px;
     }
     
     .navigation li:first-child{
