@@ -3,6 +3,7 @@ function toggleMenu(){
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
+
 //code for current date
 const daynames = [
     "Sunday",
