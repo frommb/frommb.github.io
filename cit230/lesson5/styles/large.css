@@ -27,6 +27,8 @@
     
     footer{
         font-size: 1em;
+        padding:5px;
+        margin-top: 5px;
     }
 
    .navigation li:first-child{
